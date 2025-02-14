@@ -1,15 +1,17 @@
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_ollama.llms import OllamaLLM
-template = """Question: {question}
+from langchain_ollama import ChatOllama
+from langchain_core.messages import HumanMessage, SystemMessage
 
-Answer: Let's think step by step."""
+messages = [
+    SystemMessage(content="Solve the following math problems"),
+    HumanMessage(content="What is 81 divided by 9?"),
+]
 
-prompt = ChatPromptTemplate.from_template(template)
 
-model = OllamaLLM(model="llama3")
+# ---- LangChain OpenAI Chat Model Example ----
 
-chain = prompt | model
+# Create a ChatOpenAI model
+model = ChatOllama(model="llama3")
 
-result = chain.invoke({"question": "What is LangChain?"})
-
-print(result)
+# Invoke the model with messages
+result = model.invoke(messages)
+print(f"Answer from Ollama: {result.content}")
