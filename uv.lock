@@ -1429,6 +1429,7 @@ dependencies = [
     { name = "langchain-community" },
     { name = "langchain-google-firestore" },
     { name = "langchain-google-genai" },
+    { name = "langchain-ollama" },
     { name = "langchain-openai" },
     { name = "langchainhub" },
     { name = "python-dotenv" },
@@ -1449,6 +1450,7 @@ requires-dist = [
     { name = "langchain-community", specifier = "==0.2.1" },
     { name = "langchain-google-firestore", specifier = "==0.3.0" },
     { name = "langchain-google-genai", specifier = "==1.0.5" },
+    { name = "langchain-ollama", specifier = ">=0.1.3" },
     { name = "langchain-openai", specifier = "==0.1.8" },
     { name = "langchainhub", specifier = "==0.1.18" },
     { name = "python-dotenv", specifier = "==1.0.1" },
@@ -1483,6 +1485,19 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/a3/7a/9f3bd41517891cce8164b865f8a3dbd69f36a3d9b3fa4aad94142b49b781/langchain_google_genai-1.0.5.tar.gz", hash = "sha256:5b515192755fd396a1b61b33d1b08c77fb9b53394cc25954f9d7e9a0f615de9b", size = 29918 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/f9/3d/970f990a456aa38ae66cd90692f1cff7ad3af288658f6c025bfb2f560f2f/langchain_google_genai-1.0.5-py3-none-any.whl", hash = "sha256:06b1af072e14fe2d4f9257be4bf883ccd544896094f847c2b1ab09b123ba3b9e", size = 34011 },
+]
+
+[[package]]
+name = "langchain-ollama"
+version = "0.1.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "langchain-core" },
+    { name = "ollama" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/df/61/8bbf6fae7ed5b43eebbaf3bbdeaef960c547135b5d4332dc238aa6c95e98/langchain_ollama-0.1.3.tar.gz", hash = "sha256:cc5f3d510e591cb66b382f4fe32801877593c0d0a1dc48e9e8fcd16b8e01c454", size = 11311 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/66/2d/44085dd19b14272c845e555da81bfd5e2da6604acf2cba344ede50495dcb/langchain_ollama-0.1.3-py3-none-any.whl", hash = "sha256:e4017178b2fbf822c74b29eaca3732c925265a63d9dd9fe6970c34fd32568c4a", size = 14876 },
 ]
 
 [[package]]
@@ -2029,6 +2044,19 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/6d/fa/fbf4001037904031639e6bfbfc02badfc7e12f137a8afa254df6c4c8a670/oauthlib-3.2.2.tar.gz", hash = "sha256:9859c40929662bec5d64f34d01c99e093149682a3f38915dc0655d5a633dd918", size = 177352 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/7e/80/cab10959dc1faead58dc8384a781dfbf93cb4d33d50988f7a69f1b7c9bbe/oauthlib-3.2.2-py3-none-any.whl", hash = "sha256:8139f29aac13e25d502680e9e19963e83f16838d48a0d71c287fe40e7067fbca", size = 151688 },
+]
+
+[[package]]
+name = "ollama"
+version = "0.4.7"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "httpx" },
+    { name = "pydantic" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/b0/6d/dc77539c735bbed5d0c873fb029fb86aa9f0163df169b34152914331c369/ollama-0.4.7.tar.gz", hash = "sha256:891dcbe54f55397d82d289c459de0ea897e103b86a3f1fad0fdb1895922a75ff", size = 12843 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/31/83/c3ffac86906c10184c88c2e916460806b072a2cfe34cdcaf3a0c0e836d39/ollama-0.4.7-py3-none-any.whl", hash = "sha256:85505663cca67a83707be5fb3aeff0ea72e67846cea5985529d8eca4366564a1", size = 13210 },
 ]
 
 [[package]]

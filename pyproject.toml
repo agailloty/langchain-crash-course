@@ -20,5 +20,6 @@ dependencies = [
     "firecrawl-py==0.0.13",
     "langchainhub==0.1.18",
     "wikipedia==1.4.0",
-    "tavily-python==0.3.3"
+    "tavily-python==0.3.3",
+    "langchain-ollama>=0.1.3",
 ]
